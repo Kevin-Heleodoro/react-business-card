@@ -18,8 +18,8 @@
   --body-background: #F5F5F5; 
   --footer-background: #D5D4D8;
   --text-primary: #2b283a;
-  --text-secondary: #F47D27;
-  --text-tertiary: #4A4E74;
+  --text-secondary: #4a4e74;
+  --text-tertiary: #F47D27;
   --button-accent: #918E9B;
 }
 
@@ -29,17 +29,14 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--main-background);
-
 }
 
 .body {
-  width: 317px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--body-background);
-  /* border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%; */
 }
 
 .profilePhoto {
@@ -69,6 +66,11 @@ body {
 .emailBtn {
   width: 100%;
   height: 30px;
+}
+
+.emailBtn > a {
+  text-decoration: none;
+  color: black;
 }
 
 .mainContent {

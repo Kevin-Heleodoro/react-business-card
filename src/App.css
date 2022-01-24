@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #23252C;
-  
+
 }
 
 .body {
@@ -18,12 +18,15 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #1A1B21;
+  /* border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%; */
 }
 
 .profilePhoto {
   width: 100%;
-  border-radius: 5%;
   margin-bottom: 8%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
 .header {
@@ -45,6 +48,11 @@ body {
 
 .emailBtn {
   width: 100%;
+  height: 30px;
+}
+
+.mainContent {
+  margin: 0px 30px 30px 20px;
 }
 
 .mainContent > h2 {
@@ -59,5 +67,15 @@ footer {
   background-color: #161619;
   height: 50px;
   width: 100%;
-  border-radius: inherit;
+  /* Figure out the bottom border radius issue */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > button {
+  background-color: #918E9B;
+  margin: 0px 10px;
+  border-style: none;
+  border-radius: 10%;
 }

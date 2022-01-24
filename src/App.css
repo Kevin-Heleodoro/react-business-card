@@ -3,12 +3,32 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-background: #23252C;
+  --body-background: #1A1B21; 
+  --footer-background: #161619;
+  --text-primary: #ffffff;
+  --text-secondary: #dcdcdc;
+  --text-tertiary: #F3BF99;
+  --button-accent: #918E9B;
+}
+
+[data-theme='light'] {
+  --main-background: #23252C;
+  --body-background: #F5F5F5; 
+  --footer-background: #D5D4D8;
+  --text-primary: #2b283a;
+  --text-secondary: #F47D27;
+  --text-tertiary: #4A4E74;
+  --button-accent: #918E9B;
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #23252C;
+  background-color: var(--main-background);
 
 }
 
@@ -17,7 +37,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1A1B21;
+  background-color: var(--body-background);
   /* border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%; */
 }
@@ -37,12 +57,12 @@ body {
 }
 
 .header > h1 {
-  color: #ffffff;
+  color: var(--text-primary);
 
 }
 
 .header > h2 {
-  color: #F3BF99;
+  color: var(--text-tertiary);
   margin-bottom: 10%;
 }
 
@@ -56,15 +76,20 @@ body {
 }
 
 .mainContent > h2 {
-  color: #f5f5f5f5;
+  color: var(--text-primary);
 }
 
 .mainContent > p {
-  color: #dcdcdc;
+  color: var(--text-secondary);
+}
+
+.themeSelect {
+  color: black;
+  background-color: var(--button-accent);
 }
 
 footer {
-  background-color: #161619;
+  background-color: var(--footer-background);
   height: 50px;
   width: 100%;
   /* Figure out the bottom border radius issue */
@@ -74,7 +99,7 @@ footer {
 }
 
 footer > button {
-  background-color: #918E9B;
+  background-color: var(--button-accent);
   margin: 0px 10px;
   border-style: none;
   border-radius: 10%;
